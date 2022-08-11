@@ -1,31 +1,21 @@
 import "./App.css";
+import Counter from "./counter";
+
+// import {Intro} from "./intro";
+// import usersdata from "./usersdata";
 
 function App() {
+// let usersUi = usersdata.map(user=><Intro ocupation={user.ocuppation} age={user.age} name={user.name} sex={user.sex}/>)
   return (
     <>
     <div className="App">
-    <Intro
-    name="uyai"
-    email="segun@gmail.com"
-    age = {4}/>
-     <Intro
-    name="etimbuk"
-    email="posi@gmail.com"
-    age = {9}/>
+      <Counter/>
         <h2>test</h2>
       </div>
     </>
   );
+  // {usersUi}
 }
 
-function Intro({email,age,name}) {
-  return (
-    <div>
-      <h1>my name is {name}</h1>
-      <p>i am {age} years old</p>
-      <p>email:{email}</p>
-    </div>
-  );
-}
 
 export default App;
