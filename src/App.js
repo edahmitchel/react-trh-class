@@ -1,13 +1,10 @@
-import "./App.css";
-import TodoApp from "./todolist/TodoApp";
+// import "./App.css";
+import Form from "./formClassWork/signUp/form";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h2>test</h2>
-        <TodoApp/>
-      </div>
+      <Form/>
     </>
   );
 }
